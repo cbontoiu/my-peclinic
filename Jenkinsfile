@@ -3,13 +3,12 @@ pipeline {
    stages {
     stage('maven install') {
       steps {
-        // if neede git clone here
-        withMaven(globalMavenSettingsConfig: 'null', jdk: 'null', maven: 'maven3', mavenSettingsConfig: 'null') 
+        // if needed git clone here
+        withMaven(maven: 'maven3') 
         {
            sh 'mvn clean install'
-        }
-      }
-    }
-
-  } 
-}
+        } // end withMaven
+      } // end steps
+    } // end stage
+  } // end stages
+} // end pipeline
