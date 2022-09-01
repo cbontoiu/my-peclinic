@@ -4,7 +4,7 @@ pipeline {
     stage('maven install') {
       steps {
         // if neede git clone here
-        withMaven(globalMavenSettingsConfig: 'null', jdk: 'null', maven: 'null', mavenSettingsConfig: 'null') 
+        withMaven(globalMavenSettingsConfig: 'null', jdk: 'null', maven: 'maven3', mavenSettingsConfig: 'null') 
         {
            sh 'mvn clean install'
         }
