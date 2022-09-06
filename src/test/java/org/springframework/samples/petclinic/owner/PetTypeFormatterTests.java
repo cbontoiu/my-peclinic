@@ -62,7 +62,7 @@ class PetTypeFormatterTests {
 	void shouldParse() throws ParseException {
 		given(this.pets.findPetTypes()).willReturn(makePetTypes());
 		PetType petType = petTypeFormatter.parse("Bird", Locale.ENGLISH);
-		assertThat(petType.getName()).isEqualTo("Monkey");
+		assertThat(petType.getName()).isEqualTo("Bird");
 	}
 
 	@Test
