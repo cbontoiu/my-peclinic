@@ -1,4 +1,4 @@
-# morning blue-yellow-green! 
+# blue-yellow-green! 
 # Welcome to my pet clinic project - feel free to have a go
 #
 # Spring PetClinic Sample Application [![Build Status](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml/badge.svg)](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml)
