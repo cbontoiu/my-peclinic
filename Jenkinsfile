@@ -1,5 +1,11 @@
 pipeline {
    agent any
+   
+   environment {
+    DB_RELEASE_URL = credentials('diffblue-cover-release-url')
+    DB_LICENSE_KEY = credentials('diffblue-cover-license-key')
+}
+   
    stages {
       stage('sanity checks') {
       steps {
